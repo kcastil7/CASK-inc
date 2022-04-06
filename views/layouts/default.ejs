@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJS attempt | <%= title %>
+  </title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="m-12 p-8 bg-gray-900">
+  <div class="flex flex-col items-center ">
+    <h1 class="font-bold text-3xl text-yellow-600">How can we assist you >name here< ?</h1>
+        <img src="public\stylesheets\images\dutyCALL.PNG" class="w-40" />
+
+        <div class=" border-4 border-blue-900 bg-gray-800 rounded-lg w-full m-8 text-gray-200">
+
+          <header class="border-2 border-red-600 flex justify-center p-4">
+            <nav class="">
+              <ul class="flex flex-row text-xs md:text-sm">
+                <li><a class="p-2 hover:text-yellow-300" href="/">Appointments</a></li>
+                <li><a class="p-2 hover:text-yellow-300" href="/about">Staff</a></li>
+                <li><a class="p-2 hover:text-yellow-300" href="/profile">My Profile</a></li>
+                <li><a class="p-2 hover:text-yellow-300" href="/rating/create">Reviews</a></li>
+                <li><a class="p-2 hover:text-red-300" href="">Logout</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <main class="font-bold w-full">
+            <%- body %>
+          </main>
+
+
+          <footer class="text-blue-800 text-xs flex justify-between p-2">
+            <h2 class="">Made with 🦾</h2>
+            <p class="">&copy; 2022 CASK, Inc.</p>
+          </footer>
+
+        </div>
+  </div>
+
+</body>
+
+</html>
