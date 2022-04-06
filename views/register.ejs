@@ -10,78 +10,69 @@
     <title>Duty Call | Register</title>   
 </head>
 
-<body class="bg-gray-900 h-screen flex justify-center items-center text-gray-400">
-    <div
-        class="w-52 h-72 border-4 border-green-200 bg-gray-700 flex flex-col items-center shadow-lg rounded-lg overflow-hidden py-4 px-8 ">
+<body class="bg-gray-900  flex flex-col justify-center items-center m-12">
 
-<img src="public\stylesheets\images\dutyCALL.PNG" class="w-40" />
+    <h1 class="font-bold text-3xl text-yellow-600">Register</h1>
+    <img src="/public/stylesheets/images/dutyCALL.PNG" class="w-32" />
 
-<h1 class="m-2 text-2xl font-bold text-yellow-600 ">Register</h1>
+<div class=" bg-gray-800 py-12 px-12 flex flex-col items-center border-b-2 border-l-2 border-gray-700 rounded-lg shadow-lg">
 
 <!-- post route to register -->
-<form id="register-form" class="flex flex-col justify-center items-center px-16">
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='name'>Name</label>
-        <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  class="rounded pl-4"  type='text' id='name' name='name' required>
-    </div>
+<form id="register-form" class="">
 
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='email'>Email</label>
+    <div class="">
+        <label class=""  for='name'>Name</label>
+        <!-- name = name will connect name to server -->
+        <input class=""  type='text' id='name' name='name' required>
+
+        <label class="" for='email'>Email</label>
         <!-- name = email will connect name to server -->
-        <input class="rounded pl-4"  type='email' id='email' name='email' required>
+        <input class="" type='email' id='email' name='email' required>
     </div>
 
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='name'>Password</label>
+    <div class="">
+        <label class=""  for='name'>Password</label>
         <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  type='password' id='password' name='password' required>
+        <input class=""  type='password' id='password' name='password' required>
+
+        <label class="" for='address1'>Address 1</label>
+        <!-- name = name will connect name to server -->
+        <input class="" type='text' id='address1' name='address1' required>
     </div>
 
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='address1'>Address 1</label>
+    <div class="">
+        <label class=""  for='address1'>Address 2</label>
         <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  type='text' id='address1' name='address1' required>
+        <input class=""  type='text' id='address2' name='address2'>
+
+        <label class="" for='city'>City</label>
+        <!-- name = name will connect name to server -->
+        <input class="" type='text' id='city' name='city' required>
     </div>
 
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='address1'>Address 2</label>
+    <div class="">
+        <label class=""  for='state'>State</label>
         <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  type='text' id='address2' name='address2'>
-    </div>
+        <input class=""  type='text' id='state' name='state' required>
 
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='city'>City</label>
+        <label class="" for='zipcode'>zipcode</label>
         <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  type='text' id='city' name='city' required>
+        <input class="" type='text' id='zipcode' name='zipcode' required>
     </div>
-
-    <div class="flex flex-col">
-        <label class="px-2 ml-2"  for='state'>State</label>
-        <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  type='text' id='state' name='state' required>
-    </div>
-
-    <div class="flex flex-col mb-4">
-        <label class="px-2 ml-2"  for='zipcode'>zipcode</label>
-        <!-- name = name will connect name to server -->
-        <input class="rounded pl-4"  type='text' id='zipcode' name='zipcode' required>
-    </div> 
 
         <!-- PHOTO UPLOAD SECTION -->
     <section>PHOTO UPLOAD SECTION HERE</section>
     
-    <div class="flex flex-row mt-4">
-        <button class="px-2 hover:text-green-600" type='submit'>Signup</button>
+    <div class="">
+        <button class="" type='submit'>Signup</button>
         <!-- use anchor to connect back to login page -->
-        <a class="px-4 hover:text-green-600" href='/login'>Login</a>
+        <a class="" href='/login'>Login</a>
     </div>
 </form>
 
-
+</div>
 
 <script src="public/javascript/register.js"></script>
-</div>
 </body>
 </html>
 
